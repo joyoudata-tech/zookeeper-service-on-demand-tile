@@ -1,0 +1,28 @@
+---
+name: zookeeper-service-on-demand
+product_version: 0.1.5
+metadata_version: '1.8'
+stemcell_criteria:
+  os: ubuntu-trusty
+  version: '3312'
+  enable_patch_security_updates: true
+
+releases:
+- name: on-demand-service-broker
+  file: on-demand-service-broker-0.16.1.tgz
+  version: 0.16.1
+  md5: be6ec74ccd8ba32fb1b79cdc04d7d41d 
+
+- name: zookeeper-service-adapter
+  file: zookeeper-service-adapter-1.tgz
+  version: 1
+  md5: 4eb4a3a9a5a56570a17b641ccf8c4634
+
+- name: zookeeper
+  file: zookeeper-0.0.5+dev.2.tgz
+  version: 0.0.5+dev.2
+  md5: 6ed39e7035d7590b97e017f38b378c38
+
+provides_product_versions:
+- name: zookeeper-service-on-demand
+  version: 0.1.5
