@@ -253,47 +253,47 @@ job_types:
     configurable: true
     optional: false
   - name: autopurge_purge_interval
-    type: string
+    type: integer
     default: 24
     configurable: true
   - name: autopurge_snap_retain_count
-    type: string
+    type: integer
     default: 3
     configurable: true
   - name: client_port
-    type: string
+    type: integer
     default: 2181
     configurable: true
   - name: cnx_timeout
-    type: string
+    type: integer
     default: 5
     configurable: true
   - name: election_algorim
-    type: string
+    type: integer
     default: 3
     configurable: true
   - name: global_outstanding_limit
-    type: string
+    type: integer
     default: 1000
     configurable: true
   - name: init_limit
-    type: string
+    type: integer
     default: 5
     configurable: true
   - name: leader_election_port
-    type: string
+    type: integer
     default: 3888
     configurable: true
   - name: max_client_connections
-    type: string
+    type: integer
     default: 60
     configurable: true
   - name: max_session_timeout
-    type: string
+    type: integer
     default: 40000
     configurable: true
   - name: min_session_timeout
-    type: string
+    type: integer
     default: 4000
     configurable: true
   - name: pre_allocation_size
@@ -301,19 +301,19 @@ job_types:
     default: 65536
     configurable: true
   - name: snap_count
-    type: string
+    type: integer
     default: 100000
     configurable: true
   - name: sync_limit
-    type: string
+    type: integer
     default: 2
     configurable: true
   - name: tick_time
-    type: string
+    type: integer
     default: 2000
     configurable: true
   - name: warning_threshold_ms
-    type: string
+    type: integer
     default: 1000
     configurable: true
 

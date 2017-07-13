@@ -1,6 +1,6 @@
 ---
 name: zookeeper-service-on-demand
-product_version: 0.1.6
+product_version: 0.1.9
 metadata_version: '1.8'
 stemcell_criteria:
   os: ubuntu-trusty
@@ -14,15 +14,15 @@ releases:
   md5: be6ec74ccd8ba32fb1b79cdc04d7d41d 
 
 - name: zookeeper-service-adapter
-  file: zookeeper-service-adapter-1.tgz
-  version: "2"
-  md5: c937dfab0b42a6c9ca16815209aa7151
+  file: zookeeper-service-adapter-3+dev.1.tgz
+  version: "3+dev.1"
+  md5: 2f68f32451cf67110877b374e95187a1
 
 - name: zookeeper
-  file: zookeeper-0.0.5+dev.2.tgz
+  file: zookeeper-0.0.5+dev.3.tgz
   version: "0.0.5+dev.3"
   md5: 261537466aa24a66a59f94cb2a7c1074
 
 provides_product_versions:
 - name: zookeeper-service-on-demand
-  version: 0.1.6
+  version: 0.1.9
