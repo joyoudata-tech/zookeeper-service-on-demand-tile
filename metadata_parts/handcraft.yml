@@ -126,7 +126,7 @@ job_types:
             client_secret: (( $self.uaa_client_secret ))
       cf:
         url: https://api.(( ..cf.cloud_controller.system_domain.value ))
-        autheation:
+        authentication:
           url: https://uaa.(( ..cf.cloud_controller.system_domain.value ))
           user_credentials:
             username: (( ..cf.uaa.system_services_credentials.identity ))
@@ -155,7 +155,7 @@ job_types:
           quotas:
             service_instance_limit: (( .broker.plan_instance_limit.value ))
           instance_groups:
-          - name: zookeeper_server
+          - name: zookeeper
             vm_type: (( .broker.zookeeper_server_vm_type.value ))
             instances: (( .broker.zookeeper_server_instances.value ))
             persistent_disk: (( .broker.zookeeper_server_disk_type.value ))
