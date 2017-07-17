@@ -148,10 +148,24 @@ job_types:
         bindable: true
         plan_updatable: true
         tags: [zookeeper]
+        metadata:
+          display_name: zookeeper on-demand service
+          image_url: https://zookeeper.apache.org/images/zookeeper_small.gif
+          long_description: Apache ZooKeeper is an effort to develop and maintain an open-source server which enables highly reliable distributed coordination.
+          provider_display_name: zookeeper on-demand service
+          documentation_url: https://docs.pivotal.io/svc-sdk/odb/0-16/index.html
+          support_url: https://docs.pivotal.io/svc-sdk/odb/0-16/index.html
         plans:
         - name: (( .broker.plan_name.value ))
           plan_id: (( .broker.plan_id.value ))
           description: (( .broker.plan_description.value ))
+          metadata:
+            bullets:
+              - 'zookeeper custome service'
+            costs:
+              - amount:
+                  usd: 0.0
+                unit: 'MONTHLY'
           quotas:
             service_instance_limit: (( .broker.plan_instance_limit.value ))
           instance_groups:

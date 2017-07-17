@@ -1,6 +1,6 @@
 ---
 name: zookeeper-service-on-demand
-product_version: 0.1.9
+product_version: 0.1.10
 metadata_version: '1.8'
 stemcell_criteria:
   os: ubuntu-trusty
@@ -25,4 +25,4 @@ releases:
 
 provides_product_versions:
 - name: zookeeper-service-on-demand
-  version: 0.1.9
+  version: 0.1.10
